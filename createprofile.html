@@ -8,6 +8,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/loading-btn.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/smallerscreen.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
@@ -121,16 +123,19 @@
                         </div>
                     </div>
                 </div>     
-                <button type="submit" class="btn btn-primary" id="profile-save">Save</button>
+                <div class="btn btn-default btn-primary ld-ext-right" id="profile-save">Save
+                    <div class="ld ld-ring ld-spin"></div>
+                </div>
             </form>
         </div>
     </div>
 
-
+ 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/preloader.js"></script>
     <script>
         $(document).ready(function() {
             var readURL = function(input) {

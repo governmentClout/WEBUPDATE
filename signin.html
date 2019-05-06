@@ -8,6 +8,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/loading-btn.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/smallerscreen.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
@@ -29,6 +31,10 @@
             font-size: 14px;
             font-weight: 500;
         }
+        .signup-box label, .signup-box p.haveanaccount {
+            font-size: 14px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +53,9 @@
                             <label for="pass-word">Password</label>
                             <input type="password" class="form-control" id="pass-word" placeholder="Pass word">
                         </div>
-                        <button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
+                        <div class="btn btn-default btn-primary ld-ext-right">SIGN IN
+                            <div class="ld ld-ring ld-spin"></div>
+                        </div>
                         <div class="row mt-15">
                             <div class="col-lg-6">
                                 <input type="checkbox" id="remember" name="remember" class="forgotpassword" value="Remember me">
@@ -55,7 +63,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div id="forgotpassword-div">
-                                    <p><a href="" class="forgotpassword">Forgot password</a></p>
+                                    <p><a href="resetpassword.html" class="forgotpassword">Forgot password</a></p>
                                 </div>
                             </div>
                         </div>    
@@ -85,5 +93,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/preloader.js"></script>s
 </body>
 </html>
