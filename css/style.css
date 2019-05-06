@@ -246,7 +246,9 @@ a.forgotpassword {
 	display: none;
 }
 .profileimagediv img {
-	height: 90px;
+	/*height: 90px;*/
+	height: 100%;
+    width: auto;
 }
 #profile-save {
 	width: auto;
