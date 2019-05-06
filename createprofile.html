@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Government Clout</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <style>
+        .signup-box {
+            width: 68%;
+            padding: 0;
+            padding-bottom: 70px;
+        }
+        .signup-box form {
+            width: 80%;
+        }
+        .signup-box label, .signup-box p.haveanaccount {
+            font-size: 14px;
+        }
+        ::-webkit-input-placeholder { /* Chrome */
+            color: #4f4f4f;
+            font-weight: normal;
+        } 
+        :-ms-input-placeholder {
+            color: #4f4f4f;
+            font-weight: normal;
+        }
+        ::-moz-placeholder {
+            color: #4f4f4f;
+            font-weight: normal;
+        }
+        :-moz-placeholder { 
+            color: #4f4f4f;
+            font-weight: normal;
+        }
+
+        @media screen and (max-width: 768px) {
+            .signup-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="signup-box">
+            <div class="createprofile">
+                <div id="p-image">
+                    <i class="fa fa-edit"></i>
+                </div>
+            </div>
+            <form>
+                <div id="createprofilediv">
+                    <div class="profileimagediv">
+                        <img src="images/profile-image.png" class=" profile-image img-fluid" alt="Profile Image">
+                    </div>
+                    <div class="p-image">
+                        <i class="fa fa-edit upload-button"></i>
+                        <input class="file-upload" type="file" accept="image/*"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="fname">First name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Jude">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="lname">First name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Adewale">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailaddress">Email address</label>
+                    <input type="text" class="form-control" id="emailaddress" placeholder="jamesadewale@gmail.com">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="ph-number">Phone number</label>
+                            <input type="phone" class="form-control" id="ph-number" placeholder="+234 [0] 802 345 6789">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" class="form-control" id="nationality" placeholder="Nigeria">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="residence">State of residence/interest</label>
+                            <select class="form-control" id="residence">
+                                <option>Lagos</option>
+                                <option>Osun</option>
+                                <option>Oyo</option>
+                                <option>Ondo</option>
+                            </select>   
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="lga">L.G.A</label>
+                            <select class="form-control" id="lga">
+                                <option>Alimosho</option>
+                                <option>Amuwo – Odofin</option>
+                                <option>Apapa</option>
+                                <option>Badagry</option>
+                            </select>    
+                        </div>
+                    </div>
+                </div>     
+                <button type="submit" class="btn btn-primary" id="profile-save">Save</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var readURL = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-image').attr('src', e.target.result);
+                    }
+            
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            
+
+            $(".file-upload").on('change', function(){
+                readURL(this);
+            });
+            
+            $(".upload-button").on('click', function() {
+               $(".file-upload").click();
+            });
+        });
+    </script>
+</body>
+</html>
