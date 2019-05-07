@@ -50,7 +50,12 @@ html, body {
 .signup-box form {
 	margin-top: 30px;
 }
-.signup-box label,.signup-box p.haveanaccount {
+.signup-box label,
+.signup-box p.haveanaccount,
+#shortcuts,
+.shortcuts-sample span,
+.postdiv h5,
+.postdiv .sponsored {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;

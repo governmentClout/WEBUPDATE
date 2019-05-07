@@ -1,0 +1,237 @@
+.navbar>.container {
+	display: block;
+}
+.form-inline {
+	display: inline-flex;
+}
+.navbar {
+	height: 53px;
+	background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Fira Sans', sans-serif;
+}
+#navbar-search {
+	border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    font-size: 16px;
+	line-height: 19px;
+	color: #BDBDBD;
+}
+#navbar-search .input-group{
+	width: 350px;
+}
+#navbar-search .input-group-prepend {
+	background: #F1F1F1;
+    border-radius: 4px;
+    border-right: 1px solid #C4C4C4;
+}
+.input-group-prepend i {
+	color: #333;
+}
+.message-div {
+	position: absolute;
+}
+.message-count {
+	width: 17px;
+    height: 17px;
+    border-radius: 50%;
+	position: absolute;
+    top: -6px;
+    left: 10px;
+    background: #27A9F8;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    font-size: 10px;
+	line-height: 12px;
+	color: #FAFAFA;
+	text-align: center;
+    padding-top: 4px;
+    font-family: 'Lato', sans-serif;
+}
+.m-10 {
+	margin-top: 10px;
+}
+.nav-link {
+	padding: 0;
+}
+#profile-dropdown a {
+	color: #333;
+}
+#activity-div {
+	background: #E9EBEE;
+}
+.pt-20 {
+	padding-top: 20px;
+}
+#profile-background {
+	background: url(./../images/profile-background.png);
+	/*height: 84px;*/
+	text-align: center;
+}
+/*#profile-background img {
+	position: relative;
+    top: 38px;
+}*/
+.mt-45 {
+	margin-top: 45px;
+}
+.profilename-div {
+	background: #FFFFFF;
+	border: 1px solid #F1F1F1;
+	border-top: none;
+	border-radius: 4px;
+	padding-top: 45px;
+    margin-top: -45px;
+}
+.profile-name {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333;
+}
+.leaders-div {
+	font-size: 16px;
+	line-height: 21px;
+	color: #27A9F8;
+}
+.leaders-div h6 {
+    font-weight: bold;
+}
+.leaders-div p {
+	margin-top: -5px;
+}
+.profilenamediv,
+.postdiv {
+	background: #FFFFFF;
+	border: 1px solid #F1F1F1;
+	border-radius: 4px;
+	padding: 10px;
+	margin-top: 5px;
+}
+#shortcuts {
+	font-weight: bold;
+}
+a.shortcuts-sample {
+	display: block;
+}
+a.shortcuts-sample:hover {
+	text-decoration: none;
+}
+.shortcuts-sample p {
+	width: 24px;
+    height: 24px;
+    background: #27A9F8;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.shortcuts-sample span {
+	display: inline-flex;
+	position: relative;
+	top: -6px;
+	color: #333333;
+	font-weight: normal;
+}
+#shortcut-two {
+	background: #034D79;
+}
+#shortcut-three {
+	background: #4F4F4F;
+}
+#shortcut-four {
+	background: #90A4AE;
+}
+#footer p,
+#footer p a {
+	font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #333;
+}
+.bold {
+    font-weight: bold;
+}
+#footer hr {
+	border: 1px dashed #C4C4C4;
+}
+#advertise {
+	font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.postdiv {
+	border-radius: 0;
+    border: 1px solid #F0F0F0;
+    padding: 15px;
+}
+.postdiv p {
+	margin-bottom: 0;
+}
+#postcontent-div {
+	display: -webkit-box;
+}
+#postcontent-div textarea {	
+	width: 90%;
+    margin-left: 10px;
+}
+#post-div .badge {
+	background: #F1F1F1;
+    border: 1px solid #F0F0F0;
+    border-radius: 4444px;
+    font-size: 16px;
+    color: #4F4F4F;
+    font-weight: normal;
+    padding: 7px 10px;
+}
+.pb-15 {
+	padding-bottom: 15px;
+}
+.postdiv h5 {
+	font-weight: 800;
+}
+.ml-10 {
+	margin-left: 10px;
+}
+.postdiv .sponsored {
+	font-weight: normal;
+	color: #8D8D8D;
+	margin-top: -10px;
+}
+.friendspost p,
+.comments-div a {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #333;
+}
+.postpicture-div {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 20px;
+}
+.comments-div {
+	background: #F1F1F1;
+    border-radius: 0px 0px 4px 4px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.comments-div a:hover {
+	text-decoration: none;
+}
+.comments-div .dropdown-toggle::after {
+	content: none;
+}
+.comments-div .dropdown-item {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.03em;
+	color: #4F4F4F;
+}
+.comments-div .dropdown-menu {
+	border: 1px solid #F0F0F0;
+	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.13);
+	border-radius: 4px;
+}
+.comments-div .dropdown-item:hover,
+.comments-div .dropdown-item:active {
+	background: #27A9F8;
+	color: #fff;
+}
