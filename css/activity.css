@@ -5,7 +5,7 @@
 	display: inline-flex;
 }
 .navbar {
-	height: 53px;
+	/*height: 53px;*/
 	background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     font-family: 'Fira Sans', sans-serif;
@@ -93,22 +93,21 @@
 	line-height: 21px;
 	color: #27A9F8;
 }
-.leaders-div h6 {
+.leaders-div h6,
+#shortcuts {
     font-weight: bold;
 }
 .leaders-div p {
 	margin-top: -5px;
 }
 .profilenamediv,
-.postdiv {
+.postdiv,
+.peoplediv {
 	background: #FFFFFF;
 	border: 1px solid #F1F1F1;
 	border-radius: 4px;
 	padding: 10px;
 	margin-top: 5px;
-}
-#shortcuts {
-	font-weight: bold;
 }
 a.shortcuts-sample {
 	display: block;
@@ -161,13 +160,12 @@ a.shortcuts-sample:hover {
     border: 1px solid #F0F0F0;
     padding: 15px;
 }
-.postdiv p {
-	margin-bottom: 0;
-}
-#postcontent-div {
+#postcontent-div,
+.makecomments-div {
 	display: -webkit-box;
 }
-#postcontent-div textarea {	
+#postcontent-div textarea,
+.makecomments-div textarea {	
 	width: 90%;
     margin-left: 10px;
 }
@@ -185,6 +183,7 @@ a.shortcuts-sample:hover {
 }
 .postdiv h5 {
 	font-weight: 800;
+	margin-bottom: 0;
 }
 .ml-10 {
 	margin-left: 10px;
@@ -192,10 +191,11 @@ a.shortcuts-sample:hover {
 .postdiv .sponsored {
 	font-weight: normal;
 	color: #8D8D8D;
-	margin-top: -10px;
+	/*margin-top: -10px;*/
 }
 .friendspost p,
-.comments-div a {
+.comments-div a,
+.peoplediv h6 {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -234,4 +234,64 @@ a.shortcuts-sample:hover {
 .comments-div .dropdown-item:active {
 	background: #27A9F8;
 	color: #fff;
+}
+.post-time {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #8D8D8D;
+}
+.mb--15 {
+	margin-bottom: -15px;
+}
+.makecomments-div {
+	padding: 15px 0;
+}
+.makecomments-div textarea {
+    height: 45px;
+}
+.commentersdiv {
+    background: #F7F7F7;
+    border: 1px solid #F0F0F0;
+    padding: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.commentersdiv p {
+	font-size: 16px;
+    color: #4F4F4F;
+}
+.commentersdiv span {
+    font-size: 16px;
+    color: #828282;
+}
+.commenter-name {
+	margin-top: 5px;
+    margin-bottom: 15px;
+}
+.peoplediv h5 {
+	font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #27A9F8;
+}
+.peoplediv p {
+	font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #8D8D8D;
+}
+.btn.btn-add {
+	background: #00B0F0;
+    border-radius: 4px;
+    font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+}
+.btn.btn-remove {
+	background: #F1F1F1;
+	border: 1px solid #6D6D6D;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
 }
