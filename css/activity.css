@@ -1,5 +1,10 @@
-.navbar>.container {
+.navbar>.container,
+.navbar>.container-fluid {
 	display: block;
+}
+.container-fluid {
+	width: 92%;
+	margin: auto;
 }
 .form-inline {
 	display: inline-flex;
@@ -29,7 +34,8 @@
 	color: #333;
 }
 .message-div {
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 }
 .message-count {
 	width: 17px;
@@ -102,7 +108,8 @@
 }
 .profilenamediv,
 .postdiv,
-.peoplediv {
+.peoplediv,
+.trendingdiv {
 	background: #FFFFFF;
 	border: 1px solid #F1F1F1;
 	border-radius: 4px;
@@ -195,7 +202,8 @@ a.shortcuts-sample:hover {
 }
 .friendspost p,
 .comments-div a,
-.peoplediv h6 {
+.peoplediv h6,
+#postcontent-div .trending-name {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -268,6 +276,13 @@ a.shortcuts-sample:hover {
 	margin-top: 5px;
     margin-bottom: 15px;
 }
+.peoplediv {
+	padding-bottom: 20px;
+}
+.peoplediv h5,
+.peoplediv p {
+	margin-left: 2px;
+}
 .peoplediv h5 {
 	font-size: 14px;
     letter-spacing: 0.03em;
@@ -277,14 +292,16 @@ a.shortcuts-sample:hover {
 	font-size: 12px;
     letter-spacing: 0.03em;
     color: #8D8D8D;
+    margin-top: -10px;
 }
-.btn.btn-add {
+.btn.btn-info.btn-add {
 	background: #00B0F0;
     border-radius: 4px;
     font-weight: 500;
 	font-size: 12px;
 	line-height: 14px;
 	color: #FFFFFF;
+	margin-left: 4px;
 }
 .btn.btn-remove {
 	background: #F1F1F1;
@@ -294,4 +311,32 @@ a.shortcuts-sample:hover {
 	font-size: 12px;
 	line-height: 14px;
 	color: #333333;
+	margin-left: 3px;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px dashed #C4C4C4;
+	padding-top: 20px;
+    margin-bottom: -10px;
+}
+.flex-item {
+
+}
+.more {
+	position: relative;
+    top: 10px;
+    font-weight: 500;
+	font-size: 14px;
+	color: #27A9F8;
+}
+.mgt-5 {
+	margin-top: 5px;
+}
+.trending-topic {
+	font-size: 14px;
+}
+.comments-div.trending-like {
+	background: transparent;
+	margin-top: -20px;
 }

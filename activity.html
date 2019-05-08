@@ -16,8 +16,53 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
 </head>
 <body>
+   <!--  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="display: flex;">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navb">
+                <div class="navbar-nav">
+                    <form class="form-inline" action="" id="navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div> 
+                    </form> 
+                </div>
+                <ul class="navbar-nav" style="margin: auto;">
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">0</span><img src="images/message.png" class="img-fluid" alt="message"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">2</span><img src="images/notification.png" class="img-fluid" alt="notification"></a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <!-- <li class="nav-item dropdown">
+                      <div class="pull-right">
+                                            <div id="profile-dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Link 1</a>
+                                                  <a class="dropdown-item" href="#">Link 2</a>
+                                                  <a class="dropdown-item" href="#">Link 3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  -->
     <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
                     <div>
@@ -63,7 +108,7 @@
     </nav>
 
     <div id="activity-div">
-        <div class="container pt-20">
+        <div class="container-fluid pt-20">
             <div class="row">
                 <div class="col-lg-3">
                     <div>
@@ -370,30 +415,194 @@
                     <div class="peoplediv">
                         <h6 class="bold">People you may know</h6>
                         <div>
-                            <div class="row">
-                                <div class="col-lg-2">
+                            <div class="flex-container">
+                                <div class="flex-item">
                                     <div>
                                         <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="flex-item">
                                     <div>
                                         <h5>David Benjamin</h5>
                                         <p>3 Mutual friends</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="flex-item">
                                     <div>
                                         <a class="btn btn-info btn-add">Add</a>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="flex-item">
                                     <div>
                                         <a class="btn btn-info btn-remove">Remove</a>
                                     </div>
                                 </div>
                             </div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div><div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div><div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="more">More</a>
                         </div>
+                    </div>
+                    <div class="trendingdiv">
+                        <h6 class="bold">Trending for you</h6>
+                        <div>
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="more" style="position: static;">More</a>
                     </div>
                 </div>
             </div>
