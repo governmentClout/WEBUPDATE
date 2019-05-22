@@ -59,7 +59,9 @@
 .nav-link {
 	padding: 0;
 }
-#profile-dropdown a {
+#profile-dropdown a,
+.postdiv .form-check-input,
+.postdiv .form-check-label {
 	color: #333;
 }
 #activity-div {
@@ -203,7 +205,10 @@ a.shortcuts-sample:hover {
 .friendspost p,
 .comments-div a,
 .peoplediv h6,
-#postcontent-div .trending-name {
+#postcontent-div .trending-name,
+#post-div form label,
+#post-div form input,
+#post-div form select {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -320,9 +325,9 @@ a.shortcuts-sample:hover {
 	padding-top: 20px;
     margin-bottom: -10px;
 }
-.flex-item {
+/* .flex-item {
 
-}
+} */
 .more {
 	position: relative;
     top: 10px;
@@ -333,10 +338,92 @@ a.shortcuts-sample:hover {
 .mgt-5 {
 	margin-top: 5px;
 }
-.trending-topic {
+.trending-topic,
+.postdiv .form-check-input,
+.postdiv .form-check-label {
 	font-size: 14px;
 }
 .comments-div.trending-like {
 	background: transparent;
 	margin-top: -20px;
 }
+.ml-60 {
+	margin-left: 60px;
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 590px;
+		margin: 1.75rem auto;
+	}
+}
+.modal {
+	top: 30px;
+}
+.modal-header {
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 0;
+}
+.modal-body {
+	padding: 0;
+}
+.postdiv form {
+	clear: both;
+    position: relative;
+    top: -30px;
+}
+.postdiv .form-check-label {
+    border: 1px solid #BDBDBD;
+    padding: 4px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+a.removepoll {
+	font-size: 14px;
+	color: #27A9F8;
+}
+a.removepoll.addachoice {
+	margin-left: 20px;
+}
+.modal-header select {
+	height: 32px!important;
+	padding-top: 3px;
+	font-size: 14px;
+    color: #4f4f4f;
+}
+.modal-header select option:hover {
+    background: #27A9F8;
+	color: #fff;
+	padding: 10px;
+}
+#pollModal .modal-title {
+	margin-top: -5px;
+}
+.modal-header .form-group {
+	margin-bottom: 0;
+}
+/* .pollselect-div {
+	margin-top: -40px
+} */
+.pollselect-div select {
+	height: 30px!important;
+	border: 1px solid #BDBDBD;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #333;
+	display: inline-block;
+	width: auto;
+	padding: 5px 3px;
+}
+.btn.btn-info.btn-post {
+	padding-left: 25px;
+    padding-right: 25px;
+}
+#post-div form label {
+    font-weight: 500;
+}
+#post-div form input,
+#post-div form select  {
+    color: #8C8B8B;
+}
+
