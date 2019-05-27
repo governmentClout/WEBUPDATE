@@ -30,9 +30,6 @@
     border-radius: 4px;
     border-right: 1px solid #C4C4C4;
 }
-.input-group-prepend i {
-	color: #333;
-}
 .message-div {
 	/*position: absolute;*/
 	position: relative;
@@ -61,7 +58,9 @@
 }
 #profile-dropdown a,
 .postdiv .form-check-input,
-.postdiv .form-check-label {
+.postdiv .form-check-label,
+.input-group-prepend i,
+.dropdown-header {
 	color: #333;
 }
 #activity-div {
@@ -233,11 +232,15 @@ a.shortcuts-sample:hover {
 .comments-div a:hover {
 	text-decoration: none;
 }
-.comments-div .dropdown-toggle::after {
+.comments-div .dropdown-toggle::after,
+#morefriends.dropdown-toggle::after,
+.postdiv .friends-div .btn.btn-primary.btn-message.dropdown-toggle::after,
+.message-div.nav-link.dropdown-toggle::after {
 	content: none;
 }
 .comments-div .dropdown-item,
-.friends-div .dropdown-item {
+.friends-div .dropdown-item,
+.dropdown-item {
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
@@ -252,7 +255,10 @@ a.shortcuts-sample:hover {
 .comments-div .dropdown-item:active,
 .friends-div .dropdown-item:active,
 .friends-div .dropdown-item:hover,
-.friends-div .dropdown-item:focus  {
+.friends-div .dropdown-item:focus
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover  {
 	background: #27A9F8;
 	color: #fff;
 }
@@ -469,10 +475,6 @@ a.removepoll.addachoice {
 	padding: 0!important;
     padding-right: .5rem!important;
 }
-#morefriends.dropdown-toggle::after,
-.postdiv .friends-div .btn.btn-primary.btn-message.dropdown-toggle::after {
-	content: none;
-}
 #morefriends {
 	background: transparent;
 	border: none;
@@ -480,4 +482,7 @@ a.removepoll.addachoice {
 .friends-div {
 	padding: 10px 15px 0 15px;
 	margin-bottom: 5px;
+}
+.mt-8 {
+	margin-top: 8px;
 }
