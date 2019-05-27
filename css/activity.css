@@ -164,7 +164,8 @@ a.shortcuts-sample:hover {
     font-size: 13px;
     margin-bottom: 0;
 }
-.postdiv {
+.postdiv,
+.friends-div {
 	border-radius: 0;
     border: 1px solid #F0F0F0;
     padding: 15px;
@@ -208,7 +209,10 @@ a.shortcuts-sample:hover {
 #postcontent-div .trending-name,
 #post-div form label,
 #post-div form input,
-#post-div form select {
+#post-div form select,
+#post-div .friends,
+.friends-div h5,
+.postdiv .friends-div p {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -232,7 +236,8 @@ a.shortcuts-sample:hover {
 .comments-div .dropdown-toggle::after {
 	content: none;
 }
-.comments-div .dropdown-item {
+.comments-div .dropdown-item,
+.friends-div .dropdown-item {
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
@@ -244,7 +249,10 @@ a.shortcuts-sample:hover {
 	border-radius: 4px;
 }
 .comments-div .dropdown-item:hover,
-.comments-div .dropdown-item:active {
+.comments-div .dropdown-item:active,
+.friends-div .dropdown-item:active,
+.friends-div .dropdown-item:hover,
+.friends-div .dropdown-item:focus  {
 	background: #27A9F8;
 	color: #fff;
 }
@@ -427,3 +435,49 @@ a.removepoll.addachoice {
     color: #8C8B8B;
 }
 
+
+
+/* friends.html */
+.friendsearch {
+    border-bottom: 1px solid #F0F0F0;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 0;
+    border-top: none;
+}
+#post-div .friends {
+    margin-top: 7px;
+}
+.postdiv .friends-div h5,
+.postdiv .friends-div p {
+	font-weight: 600;
+}
+.postdiv .friends-div p {
+	color: #6d6d6d;
+}
+.postdiv .friends-div .btn.btn-primary.btn-message {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #00B0F0;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #00B0F0;
+	padding-top: 4px;
+    margin-top: 5px;
+}
+.p-2 {
+	padding: 0!important;
+    padding-right: .5rem!important;
+}
+#morefriends.dropdown-toggle::after,
+.postdiv .friends-div .btn.btn-primary.btn-message.dropdown-toggle::after {
+	content: none;
+}
+#morefriends {
+	background: transparent;
+	border: none;
+}
+.friends-div {
+	padding: 10px 15px 0 15px;
+	margin-bottom: 5px;
+}
