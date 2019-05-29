@@ -107,6 +107,9 @@
 .leaders-div p {
 	margin-top: -5px;
 }
+.trendingdiv {
+	margin-bottom: 60px;
+}
 .profilenamediv,
 .postdiv,
 .peoplediv,
@@ -211,7 +214,8 @@ a.shortcuts-sample:hover {
 #post-div form select,
 #post-div .friends,
 .friends-div h5,
-.postdiv .friends-div p {
+.postdiv .friends-div p,
+.postdiv .notification-comment p {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -354,7 +358,8 @@ a.shortcuts-sample:hover {
 }
 .trending-topic,
 .postdiv .form-check-input,
-.postdiv .form-check-label {
+.postdiv .form-check-label,
+a.viewmore {
 	font-size: 14px;
 }
 .comments-div.trending-like {
@@ -440,7 +445,20 @@ a.removepoll.addachoice {
 #post-div form select  {
     color: #8C8B8B;
 }
-
+/* footer */
+footer {
+	background: #FAFAFA;
+	color: #333;
+	font-size: 14px;
+	padding-top: 15px; 
+}
+footer a {
+	font-weight: 500;
+	font-size: 16px;
+	margin-left: 10px;
+	color: #333;
+	line-height: 21px;
+}
 
 
 /* friends.html */
@@ -485,4 +503,30 @@ a.removepoll.addachoice {
 }
 .mt-8 {
 	margin-top: 8px;
+}
+.viewmore-cover {
+	border-top: 1px solid #F0F0F0;
+}
+a.viewmore {
+	color: #000;
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* notification page */
+.postdiv .notification-comment {
+	border-bottom: 1px solid #F0F0F0;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 15px;
+}
+.mgt-5 {
+	margin-top: 5px;
 }
