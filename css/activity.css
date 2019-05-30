@@ -549,3 +549,18 @@ section {
 .privacy-details {
 	padding: 60px 60px 120px 60px;
 }
+
+/* 404 page */
+.privacy-details h5 {
+	font-weight: 800;
+	font-size: 150px;
+	line-height: 180px;
+	color: #4F4F4F;
+}
+.privacy-details h6 {
+	font-size: 45px;
+	line-height: 54px;
+	color: #333333;
+	margin-top: -25px;
+	margin-bottom: 10px;
+}
