@@ -215,7 +215,8 @@ a.shortcuts-sample:hover {
 #post-div .friends,
 .friends-div h5,
 .postdiv .friends-div p,
-.postdiv .notification-comment p {
+.postdiv .notification-comment p,
+.privacy-details p {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -529,4 +530,22 @@ a:hover {
 }
 .mgt-5 {
 	margin-top: 5px;
+}
+
+/* privacy page */
+.privacy-div {
+	background: linear-gradient(33.13deg, #27A9F8 9.78%, #0A8CBB 83.29%);
+	font-weight: 500;
+	font-size: 36px;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	color: #FFF;
+	padding: 60px 40px;
+	text-align: center;
+} 
+section {
+	background: #e5e5e5;
+}
+.privacy-details {
+	padding: 60px 60px 120px 60px;
 }
