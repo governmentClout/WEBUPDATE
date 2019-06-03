@@ -568,17 +568,13 @@ section {
 
 /* FAQ */ 
 .panel {
-    border: 1px solid #BDBDBD;
+	border: 1px solid #BDBDBD;
 }
 .panel-heading {
-	/* background: #27A9F8; */
 	background: #F2F2F2;
 	padding: 5px 30px;
 }
 .panel-heading a {
-    /* font-weight: bold; */
-    /* font-size: 18px; */
-	/* color: #FFF; */
 	display: block;
 	padding-top: 5px;
 }
@@ -591,12 +587,24 @@ section {
 	padding: 20px 30px 5px 30px;
 }
 .panel-heading:hover,
-.panel-heading:active {
+.panel-heading:active,
+.panel-heading.heading:hover,
+.panel-heading.heading:active {
 	background: #27A9F8;
 }
 .panel-heading:hover a,
 .panel-heading:active a {
-	font-weight: bold;
-    font-size: 18px;
+	/* font-weight: bold;
+    font-size: 18px; */
 	color: #FFF;
+}
+.panel-heading.heading {
+	background: #fff;
+}
+.privacy-details h3 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 35px;
+	letter-spacing: 0.03em;
+	color: #27A9F8;
 }
