@@ -60,7 +60,8 @@
 .postdiv .form-check-input,
 .postdiv .form-check-label,
 .input-group-prepend i,
-.dropdown-header {
+.dropdown-header,
+.political-holder h5 {
 	color: #333;
 }
 #activity-div {
@@ -217,7 +218,8 @@ a.shortcuts-sample:hover {
 .postdiv .friends-div p,
 .postdiv .notification-comment p,
 .privacy-details p,
-.panel-heading a {
+.panel-heading a,
+.petition-to {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -289,7 +291,8 @@ a.shortcuts-sample:hover {
     margin-right: -15px;
     margin-left: -15px;
 }
-.commentersdiv p {
+.commentersdiv p,
+.economy {
 	font-size: 16px;
     color: #4F4F4F;
 }
@@ -361,7 +364,8 @@ a.shortcuts-sample:hover {
 .trending-topic,
 .postdiv .form-check-input,
 .postdiv .form-check-label,
-a.viewmore {
+a.viewmore,
+.political-holder h5 {
 	font-size: 14px;
 }
 .comments-div.trending-like {
@@ -454,7 +458,8 @@ footer {
 	font-size: 14px;
 	padding-top: 15px; 
 }
-footer a {
+footer a,
+#post-div #petiton-div span {
 	font-weight: 500;
 	font-size: 16px;
 	margin-left: 10px;
@@ -607,4 +612,36 @@ section {
 	line-height: 35px;
 	letter-spacing: 0.03em;
 	color: #27A9F8;
+}
+
+/* petition page */
+.profilenamediv .flex-container {
+	padding-top: 10px;
+}
+.political-holder {
+	margin-left: 10px;
+}
+.political-holder h6 {
+	margin-top: 5px;
+    margin-bottom: 0;
+}
+.political-holder p {
+	font-size: 12px;
+    line-height: 14px;
+	color: #646464;
+}
+#post-div #petiton-div span {
+	margin-left: 0;
+}
+.fairly-bold {
+	font-weight: 600;
+}
+.btn.btn-info.btn-sign {
+	background: #27A9F8;
+	border-color: #27A9F8;
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
