@@ -14,8 +14,77 @@
     <link href="css/activity.css" rel="stylesheet"/>
     <link href="css/smallerscreen.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+    <style>
+        #profile-background {
+            background: url(images/profile.svg);
+            padding-top: 130px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .profilename-div {
+            margin-top: 0;
+            padding: 0 10px 10px 10px;
+        }
+        .profilename-div img {
+            margin-top: -45px;
+        }
+        .profile-name {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        .leaders-div h6 {
+            font-weight: 500;
+            color: #333;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="display: flex;">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navb">
+                <div class="navbar-nav">
+                    <form class="form-inline" action="" id="navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div> 
+                    </form> 
+                </div>
+                <ul class="navbar-nav" style="margin: auto;">
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">0</span><img src="images/message.png" class="img-fluid" alt="message"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">2</span><img src="images/notification.png" class="img-fluid" alt="notification"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="pull-right">
+                            <div id="profile-dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    -->
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
             <div class="row">
@@ -107,7 +176,7 @@
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-left">
                                         <h5 class="dropdown-header">Notifications</h5>
-                                        <a class="dropdown-item" href="">
+                                        <a class="dropdown-item" href="notifications.html">
                                             <div class="d-flex">
                                                 <div class="p-2">
                                                     <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
@@ -119,7 +188,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a class="dropdown-item" href="">
+                                        <a class="dropdown-item" href="notifications.html">
                                             <div class="d-flex">
                                                 <div class="p-2">
                                                     <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
@@ -131,7 +200,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a class="dropdown-item" href="">
+                                        <a class="dropdown-item" href="notifications.html">
                                             <div class="d-flex">
                                                 <div class="p-2">
                                                     <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
@@ -171,376 +240,311 @@
     <div id="activity-div">
         <div class="container-fluid pt-20">
             <div class="row">
-                <div class="col-lg-3">
-                    <div>
-                        <div id="profile-background">
-                            <div class="">
-                                <img src="images/prof.png" class="img-fluid mt-45" alt="Profile Image">
-                            </div>
-                            <!-- <div class="p-image">
-                                <i class="fa fa-edit upload-button"></i>
-                                <input class="file-upload" type="file" accept="image/*"/>
-                            </div> -->
-                            <div class="profilename-div">
-                                <p class="profile-name">James Adewale</p>
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="leaders-div">
-                                           <h6>Clouts</h6>
-                                           <p>300</p>
-                                        </div> 
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="leaders-div">
-                                           <h6>Leaders</h6>
-                                           <p>200</p>
-                                        </div> 
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="leaders-div">
-                                           <h6>Friends</h6>
-                                           <p>100</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profilenamediv">
-                            <h5 class="profile-name" style="font-weight: bold;">Political Office holders</h5>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-container" style="border-bottom: none;">
-                                <div class="flex-item">
-                                    <div>
-                                        <img src="images/holder.png" class="img-fluid" alt="Profile picture">
-                                    </div>
-                                </div>
-                                <div class="flex-item">
-                                    <div class="political-holder">
-                                        <h6>Marks Webber</h6>
-                                        <p>President</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profilenamediv">
-                            <div id="shortcut-div">
-                                <p id="shortcuts">Shortcuts</p>
-                                <a href="" class="shortcuts-sample">
-                                    <p></p>
-                                    <span>Governance Clout</span>
-                                </a>
-                                <a href="" class="shortcuts-sample">
-                                    <p id="shortcut-two"></p>
-                                    <span>Governance Clout</span>
-                                </a>
-                                <a href="" class="shortcuts-sample">
-                                    <p id="shortcut-three"></p>
-                                    <span>Governance Clout</span>
-                                </a>
-                                <a href="" class="shortcuts-sample">
-                                    <p id="shortcut-four"></p>
-                                    <span>Governance Clout</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="profilenamediv">
-                            <div id="footer">
-                                <p id="copy">© 2018 GClout | Copyrights reserved</p>
-                                <p><a href="">Help & FAQ</a> | <a href="terms.html">Terms Of Use</a> | <a href="privacy.html">Privacy policy</a></p>
-                                <p><span class="bold">Contact Us</span> <br>Email: <a href="mailto:gclout@gmail.com">gclout@gmail.com</a><br> Phone: +234 803 333 3333</p>
-                                <hr>
-                                <p id="advertise"><img src="images/foot.png"> Advertise with Gclout</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="postdiv">
-                        <div id="post-div" class="filterdropdown-div">
-                            <div class="pull-left" id="petiton-div">
-                                <span>Petition</span>
-                                <span>All</span>
-                                <span>Participated</span>
-                            </div>
-                            <div class="dropdown pull-right">
-                                <a class="dropdown-toggle filter-dropdown" data-toggle="dropdown" href="#">
-                                    <span class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">All</a>
-                                  <a class="dropdown-item" href="#">Infrastructure</a>
-                                  <a class="dropdown-item" href="#">Education</a>
-                                  <a class="dropdown-item" href="#">Politics</a>
-                                  <a class="dropdown-item" href="#">Security</a>
-                                  <a class="dropdown-item" href="#">Agriculture</a>
-                                  <a class="dropdown-item" href="#">Technology</a>
-                                  <a class="dropdown-item" href="#">Economy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="postdiv">
-                        <div id="post-div">
-                            <div id="postcontent-div">
-                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                                <textarea class="form-control" placeholder="What’s on your mind" data-toggle="modal" data-target="#postModal"></textarea>
-                            </div>
-                            <div class="pt-20 pb-15 mb--15">
-                                <a href=""><span class="badge badge-secondary"><img src="images/article.png" class="img-fluid" alt="icon">&nbsp;Article</span></a>
-                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png" class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
-                                <a href=""><span class="badge badge-secondary"><img src="images/location.png" class="img-fluid" alt="icon">&nbsp;Location</span></a>
-                                <a href="" data-toggle="modal" data-target="#petitionModal"><span class="badge badge-secondary"><img src="images/petition.png" class="img-fluid" alt="icon">&nbsp;Petition</span></a>
-                                <a href="" data-toggle="modal" data-target="#pollModal"><span class="badge badge-secondary"><img src="images/poll.png" class="img-fluid" alt="icon">&nbsp;Poll</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="postdiv" style="padding-bottom: 0;" data-toggle="modal" data-target="#singlePetitionModal">
-                        <div>
-                            <p class="pull-left petition-to">Petition to president Theresa May</p>
-                            <p class="text-right economy fairly-bold">Economy</p>
-                        </div>
-                        <div id="postcontent-div">
-                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                            <div class="ml-10">
-                                <h5>David Benjamin</h5>
-                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
-                            </div>
-                        </div>
-                        <div class="friendspost">
-                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together)... <a href="">Read more</a></p>
-                        </div>
-                        <div class="comments-div">
+                <div class="col-lg-9">
+                    <div id="profile-background">
+                        <div class="profilename-div">
                             <div class="row">
-                                <div class="col-lg-3">
-                                    <div>
-                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                <div class="col-lg-4">
+                                    <div class="">
+                                        <img src="images/prof.png" class="img-fluid" alt="Profile Image">
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                           <img src="images/like.png">&nbsp;10 Shares 
-                                        </a>
-                                        <div class="dropdown-menu" style="transform: none!important;">
-                                          <a class="dropdown-item" href="#">Share on Facebook</a>
-                                          <a class="dropdown-item" href="#">Share on Twitter</a>
-                                          <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                    <div>
+                                        <p class="profile-name">James Adewale</p>
+                                        <div class="row">
+                                            <div class="col-lg-2"></div>
+                                            <div class="col-lg-4">
+                                                <div class="leaders-div">
+                                                    <h6>Folowing</h6>
+                                                    <p>300</p>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="leaders-div">
+                                                    <h6>Friends</h6>
+                                                    <p>200</p>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-2"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div>
-                                        <a href=""><img src="images/signed.png">&nbsp;1 Signed</a>
-                                        <a class="btn btn-info btn-sign">Sign petition</a>
+                                <div class="col-lg-8">
+                                    <div class="text-right pt-10">
+                                        <div class="dropdown political-dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Political parties</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">PDP</a>
+                                                <a class="dropdown-item" href="#">PDP</a>
+                                                <a class="dropdown-item" href="#">AGPA</a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="btn btn-info btn-upgrade">Upgrade</a>
+                                        <a href="" class="btn btn-info btn-editprofile">Edit profile</a>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="postdiv" style="padding-bottom: 0;" data-toggle="modal" data-target="#singlePetitionModal">
-                        <div>
-                            <p class="pull-left petition-to">Petition to president Theresa May</p>
-                            <p class="text-right economy fairly-bold">Economy</p>
-                        </div>
-                        <div id="postcontent-div">
-                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                            <div class="ml-10">
-                                <h5>David Benjamin</h5>
-                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
-                            </div>
-                        </div>
-                        <div class="friendspost">
-                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together)... <a href="">Read more</a></p>
-                        </div>
-                        <div class="comments-div">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div>
-                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="profilenamediv">
+                                    <div id="footer">
+                                        <p id="copy">© 2018 GClout | Copyrights reserved</p>
+                                        <p><a href="">Help & FAQ</a> | <a href="terms.html">Terms Of Use</a> | <a href="privacy.html">Privacy policy</a></p>
+                                        <p><span class="bold">Contact Us</span> <br>Email: <a href="mailto:gclout@gmail.com">gclout@gmail.com</a><br> Phone: +234 803 333 3333</p>
+                                        <hr>
+                                        <p id="advertise"><img src="images/foot.png"> Advertise with Gclout</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                           <img src="images/like.png">&nbsp;10 Shares 
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="postdiv">
+                                <div id="post-div" class="pb-20">
+                                    <p class="pull-left">Post</p>
+                                    <div class="dropdown pull-right">
+                                        <a class="dropdown-toggle filter-dropdown" data-toggle="dropdown" href="#">
+                                            <span class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</span>
                                         </a>
-                                        <div class="dropdown-menu" style="transform: none!important;">
-                                          <a class="dropdown-item" href="#">Share on Facebook</a>
-                                          <a class="dropdown-item" href="#">Share on Twitter</a>
-                                          <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">All</a>
+                                        <a class="dropdown-item" href="#">Infrastructure</a>
+                                        <a class="dropdown-item" href="#">Education</a>
+                                        <a class="dropdown-item" href="#">Politics</a>
+                                        <a class="dropdown-item" href="#">Security</a>
+                                        <a class="dropdown-item" href="#">Agriculture</a>
+                                        <a class="dropdown-item" href="#">Technology</a>
+                                        <a class="dropdown-item" href="#">Economy</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div>
-                                        <a href=""><img src="images/signed.png">&nbsp;1 Signed</a>
-                                        <a class="btn btn-info btn-sign">Sign petition</a>
-                                    </div>    
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="postdiv" style="padding-bottom: 0;">
-                        <div>
-                            <p class="pull-left petition-to">Petition to president Theresa May</p>
-                            <p class="text-right economy fairly-bold">Economy</p>
-                        </div>
-                        <div id="postcontent-div">
-                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                            <div class="ml-10">
-                                <h5>David Benjamin</h5>
-                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
-                            </div>
-                        </div>
-                        <div class="friendspost">
-                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together)... <a href="">Read more</a></p>
-                        </div>
-                        <div class="comments-div">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div>
-                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                            <div class="postdiv">
+                                <div id="post-div">
+                                    <div id="postcontent-div">
+                                        <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                        <textarea class="form-control" placeholder="What’s on your mind" data-toggle="modal" data-target="#postModal"></textarea>
+                                    </div>
+                                    <div class="pt-20 pb-15 mb--15">
+                                        <a href=""><span class="badge badge-secondary"><img src="images/article.png" class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                        <a href=""><span class="badge badge-secondary"><img src="images/camera.png" class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                        <a href=""><span class="badge badge-secondary"><img src="images/location.png" class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                        <a href="" data-toggle="modal" data-target="#petitionModal"><span class="badge badge-secondary"><img src="images/petition.png" class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                        <a href="" data-toggle="modal" data-target="#pollModal"><span class="badge badge-secondary"><img src="images/poll.png" class="img-fluid" alt="icon">&nbsp;Poll</span></a>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            <img src="images/like.png">&nbsp;10 Shares 
-                                        </a>
-                                        <div class="dropdown-menu" style="transform: none!important;">
-                                          <a class="dropdown-item" href="#">Share on Facebook</a>
-                                          <a class="dropdown-item" href="#">Share on Twitter</a>
-                                          <a class="dropdown-item" href="#">Share on Linkedin</a>
+                            </div>
+                            <div class="postdiv" style="padding-bottom: 0;">
+                                <div id="postcontent-div">
+                                    <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                    <div class="ml-10">
+                                        <h5>Fresh and Clean with Four Brothers Plc.</h5>
+                                        <p class="sponsored">Sponsored</p>
+                                    </div>
+                                </div>
+                                <div class="friendspost">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <p>This ads was made possibly by <span class="bold">Four Brothers Plc.</span></p>
+                                </div>
+                                <div class="postpicture-div">
+                                    <img src="images/post-picture.png" class="img-fluid" alt="Picture">
+                                </div>
+                                <div class="comments-div">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <img src="images/like.png">&nbsp;10 Shares 
+                                                </a>
+                                                <div class="dropdown-menu" style="transform: none!important;">
+                                                <a class="dropdown-item" href="#">Share on Facebook</a>
+                                                <a class="dropdown-item" href="#">Share on Twitter</a>
+                                                <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div>
-                                        <a href=""><img src="images/signed.png">&nbsp;1 Signed</a>
-                                        <a class="btn btn-info btn-sign">Sign petition</a>
-                                    </div>            
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="postdiv" style="padding-bottom: 0;">
-                        <div>
-                            <p class="pull-left petition-to">Petition to president Theresa May</p>
-                            <p class="text-right economy fairly-bold">Economy</p>
-                        </div>
-                        <div id="postcontent-div">
-                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                            <div class="ml-10">
-                                <h5>David Benjamin</h5>
-                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
-                            </div>
-                        </div>
-                        <div class="friendspost">
-                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together)... <a href="">Read more</a></p>
-                        </div>
-                        <div class="comments-div">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div>
-                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                            <div class="postdiv" style="padding-bottom: 0;">
+                                <div id="postcontent-div">
+                                    <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                    <div class="ml-10">
+                                        <h5>David Benjamin</h5>
+                                        <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                           <img src="images/like.png">&nbsp;10 Shares 
-                                        </a>
-                                        <div class="dropdown-menu" style="transform: none!important;">
-                                            <a class="dropdown-item" href="#">Share on Facebook</a>
-                                            <a class="dropdown-item" href="#">Share on Twitter</a>
-                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                <div class="friendspost">
+                                    <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together).</p>
+                                </div>
+                                <div class="comments-div">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <img src="images/like.png">&nbsp;10 Shares 
+                                                </a>
+                                                <div class="dropdown-menu" style="transform: none!important;">
+                                                <a class="dropdown-item" href="#">Share on Facebook</a>
+                                                <a class="dropdown-item" href="#">Share on Twitter</a>
+                                                <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div>
-                                        <a href=""><img src="images/signed.png">&nbsp;1 Signed</a>
-                                        <a class="btn btn-info btn-sign">Sign petition</a>
-                                    </div>                    
+                                <div class="makecomments-div">
+                                    <img src="images/commenter.png" class="img-fluid" alt="Profile picture">
+                                    <textarea class="form-control" placeholder="Write a comment here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="postdiv" style="padding-bottom: 0;">
+                                <div id="postcontent-div">
+                                    <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                    <div class="ml-10">
+                                        <h5>David Benjamin</h5>
+                                        <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
+                                    </div>
+                                </div>
+                                <div class="friendspost">
+                                    <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together).</p>
+                                </div>
+                                <div class="comments-div">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <img src="images/like.png">&nbsp;10 Shares 
+                                                </a>
+                                                <div class="dropdown-menu" style="transform: none!important;">
+                                                <a class="dropdown-item" href="#">Share on Facebook</a>
+                                                <a class="dropdown-item" href="#">Share on Twitter</a>
+                                                <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="makecomments-div">
+                                    <img src="images/commenter.png" class="img-fluid" alt="Profile picture">
+                                    <textarea class="form-control" placeholder="Write a comment here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="postdiv" style="padding-bottom: 0;">
+                                <div id="postcontent-div">
+                                    <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                    <div class="ml-10">
+                                        <h5>David Benjamin</h5>
+                                        <p class="post-time">40min</p>
+                                    </div>
+                                </div>
+                                <div class="friendspost">
+                                    <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together).</p>
+                                </div>
+                                <div class="comments-div">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <img src="images/like.png">&nbsp;10 Shares 
+                                                </a>
+                                                <div class="dropdown-menu" style="transform: none!important;">
+                                                <a class="dropdown-item" href="#">Share on Facebook</a>
+                                                <a class="dropdown-item" href="#">Share on Twitter</a>
+                                                <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentersdiv">
+                                    <div id="postcontent-div">
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                        <div class="ml-10">
+                                            <h5 class="commenter-name">Maria Keshi</h5>
+                                        </div>
+                                    </div>
+                                    <p>Great designers get involved in conversations, even forcing themselves, instead of just thinking about how they can do their work get involved in conversations, even forcing themselves, instead of just thinking about how they can do their work.</p>
+                                    <div><span>3h</span>&emsp;<span>16 likes</span></div>
+                                </div>
+                            </div>
+                            <div class="postdiv" style="padding-bottom: 0;">
+                                <div id="postcontent-div">
+                                    <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                    <div class="ml-10">
+                                        <h5>David Benjamin</h5>
+                                        <p class="post-time">40min</p>
+                                    </div>
+                                </div>
+                                <div class="friendspost">
+                                    <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together).</p>
+                                </div>
+                                <div class="comments-div">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <img src="images/like.png">&nbsp;10 Shares 
+                                                </a>
+                                                <div class="dropdown-menu" style="transform: none!important;">
+                                                <a class="dropdown-item" href="#">Share on Facebook</a>
+                                                <a class="dropdown-item" href="#">Share on Twitter</a>
+                                                <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -774,21 +778,19 @@
                     <div class="modal-title">
                         <p class="pull-left">Post</p>
                     </div>
-                    <div>
-                        <div class="dropdown pull-right">
-                            <a class="dropdown-toggle filter-dropdown" data-toggle="dropdown" href="#">
-                                <span class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</span>
-                            </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">All</a>
-                              <a class="dropdown-item" href="#">Infrastructure</a>
-                              <a class="dropdown-item" href="#">Education</a>
-                              <a class="dropdown-item" href="#">Politics</a>
-                              <a class="dropdown-item" href="#">Security</a>
-                              <a class="dropdown-item" href="#">Agriculture</a>
-                              <a class="dropdown-item" href="#">Technology</a>
-                              <a class="dropdown-item" href="#">Economy</a>
-                            </div>
+                    <div class="dropdown pull-right">
+                        <a class="dropdown-toggle filter-dropdown" data-toggle="dropdown" href="#">
+                            <span class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</span>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Infrastructure</a>
+                          <a class="dropdown-item" href="#">Education</a>
+                          <a class="dropdown-item" href="#">Politics</a>
+                          <a class="dropdown-item" href="#">Security</a>
+                          <a class="dropdown-item" href="#">Agriculture</a>
+                          <a class="dropdown-item" href="#">Technology</a>
+                          <a class="dropdown-item" href="#">Economy</a>
                         </div>
                     </div>
                 </div>
@@ -1000,59 +1002,6 @@
                             <div>
                                 <button class="btn btn-info btn-add btn-post">Post</button>
                                 <button class="btn btn-info btn-remove btn-post">Remove</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- singlePetitionModal -->
-    <div class="modal" id="singlePetitionModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="postdiv" style="padding-bottom: 0;">
-                        <div>
-                            <p class="pull-left petition-to">Petition to president Theresa May</p>
-                            <p class="text-right economy fairly-bold">Economy</p>
-                        </div>
-                        <div id="postcontent-div">
-                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
-                            <div class="ml-10">
-                                <h5>David Benjamin</h5>
-                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
-                            </div>
-                        </div>
-                        <div class="friendspost">
-                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of UX, PM and eng, and the reason why we emphasize this triad is because it is essentially what leads to the development of a product (done well when everyone works together)... <a href="">Read more</a></p>
-                        </div>
-                        <div class="comments-div">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div>
-                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <img src="images/like.png">&nbsp;10 Shares 
-                                        </a>
-                                        <div class="dropdown-menu" style="transform: none!important;">
-                                        <a class="dropdown-item" href="#">Share on Facebook</a>
-                                        <a class="dropdown-item" href="#">Share on Twitter</a>
-                                        <a class="dropdown-item" href="#">Share on Linkedin</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div>
-                                        <a href=""><img src="images/signed.png">&nbsp;1 Signed</a>
-                                        <a class="btn btn-info btn-sign">Sign petition</a>
-                                    </div>    
-                                </div>
                             </div>
                         </div>
                     </div>

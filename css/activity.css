@@ -61,7 +61,8 @@
 .postdiv .form-check-label,
 .input-group-prepend i,
 .dropdown-header,
-.political-holder h5 {
+.political-holder h5,
+.dropdown-toggle.filter-dropdown span {
 	color: #333;
 }
 #activity-div {
@@ -72,8 +73,12 @@
 }
 #profile-background {
 	background: url(./../images/profile-background.png);
-	/*height: 84px;*/
+	padding-top: 30px;
+	/* height: 84px; */
 	text-align: center;
+	background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 /*#profile-background img {
 	position: relative;
@@ -219,7 +224,8 @@ a.shortcuts-sample:hover {
 .postdiv .notification-comment p,
 .privacy-details p,
 .panel-heading a,
-.petition-to {
+.petition-to,
+.progress-bar {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -615,7 +621,8 @@ section {
 }
 
 /* petition page */
-.profilenamediv .flex-container {
+.profilenamediv .flex-container,
+.pt-10 {
 	padding-top: 10px;
 }
 .political-holder {
@@ -644,4 +651,76 @@ section {
     line-height: 19px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+.dropdown-toggle.filter-dropdown::after {
+	content: none;
+}
+#post-div.filterdropdown-div {
+	padding-bottom: 20px;
+}
+.pb-20 {
+	padding-bottom: 20px;
+}
+.message-content {
+	margin-top: -15px;
+}
+
+/* polls page */
+.poll-progress-div {
+	width: 50%;
+}
+.progress {
+	height: 35px;
+    background: #fff;
+    border-radius: 4px;
+	margin-bottom: 10px;
+}
+.progress-bar {
+	text-align: left;
+	padding-left: 20px;
+}
+.yes-progress {
+    border: 1px solid #27A9F8;
+}
+.yes-progressbar {
+	background: #27A9F8;
+}
+.mgt-5 {
+	margin-top: 5px;
+}
+.no-progress {
+	border: 1px solid #bdbdbd;
+}
+.no-progressbar {
+	background: #bdbdbd;
+}
+.transparent-progressbar {
+	background: transparent;
+}
+
+/* profile page */
+.political-dropdown,
+.btn.btn-info.btn-upgrade,
+.btn.btn-info.btn-editprofile {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 500;
+	border-radius: 4px;
+	align-items: center;
+}
+.political-dropdown,
+.btn.btn-info.btn-editprofile {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #00B0F0;
+	color: #00B0F0;
+}
+.political-dropdown {
+	display: initial;
+	padding: 8px;
+    margin-right: 5px;
+}
+.btn.btn-info.btn-upgrade {
+	background: #27A9F8;
+	border: 1px solid #00B0F0;
+	color: #FFF;
 }
