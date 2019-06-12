@@ -62,7 +62,9 @@
 .input-group-prepend i,
 .dropdown-header,
 .political-holder h5,
-.dropdown-toggle.filter-dropdown span {
+.dropdown-toggle.filter-dropdown span,
+#detailsModal h5,
+.political-holder h6 {
 	color: #333;
 }
 #activity-div {
@@ -225,7 +227,8 @@ a.shortcuts-sample:hover {
 .privacy-details p,
 .panel-heading a,
 .petition-to,
-.progress-bar {
+.progress-bar,
+#detailsModal p {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #333;
@@ -254,7 +257,14 @@ a.shortcuts-sample:hover {
 }
 .comments-div .dropdown-item,
 .friends-div .dropdown-item,
-.dropdown-item {
+.dropdown-item,
+.contact-info h5,
+.contact-info p,
+#editprofileModal label,
+#editprofileModal .form-control,
+#upgradeModal p,
+#upgradeModal .form-control,
+#upgradeModal #checkbox {
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
@@ -450,7 +460,9 @@ a.removepoll.addachoice {
 	padding-left: 25px;
     padding-right: 25px;
 }
-#post-div form label {
+#post-div form label,
+.contact-info p,
+#upgradeModal label {
     font-weight: 500;
 }
 #post-div form input,
@@ -723,4 +735,79 @@ section {
 	background: #27A9F8;
 	border: 1px solid #00B0F0;
 	color: #FFF;
+}
+.contact-info,
+.mt-40 {
+	margin-top: 40px;
+}
+.contact-info h5 {
+	font-weight: 500;
+	color: #034D79;
+}
+.contact-info p {
+	margin-bottom: 0;
+} 
+.politicaloffice-holder {
+	background: #F2F2F2;
+	padding: 15px;
+	padding-left: 33px;
+}
+.political-holder {
+	display: flex;
+	flex-flow: row wrap;
+}
+.political-holder div {
+	flex: 1;
+}
+.political-holder h6 {
+	font-size: 12px;
+	line-height: 14px;
+}
+.political-holder p {
+	font-size: 10px;
+	line-height: 12px;
+	color: #646464;
+}
+#detailsModal .modal-dialog {
+	max-width: 850px;
+}
+#detailsModal .modal-body {
+	padding: 50px 70px;
+}
+#detailsModal h5,
+#upgradeModal h5 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: capitalize;
+}
+#detailsModal h5 {
+	margin-bottom: 30px;
+}
+#editprofileModal .modal-body {
+	padding: 20px 60px;
+} 
+#editprofileModal button,
+#upgradeModal button {
+	font-size: 16px;
+    line-height: 19px;
+    margin-left: 0;
+}
+#upgradeModal .modal-body {
+	padding: 20px 80px;
+}
+#upgradeModal p,
+#upgradeModal #checkbox {
+	color: #333;
+}
+#upgradeModal textarea {
+	height: 100px;
+}
+#upgradeModal button {
+	font-weight: bold;
+	width: 100%;
+	text-transform: uppercase;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
