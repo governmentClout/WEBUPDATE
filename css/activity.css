@@ -766,21 +766,20 @@ section {
 	padding: 15px;
 	padding-left: 33px;
 }
-.political-holder {
+.political-office-holder {
 	display: flex;
 	flex-flow: row wrap;
 }
-.political-holder div {
+.political-office-holder div {
 	flex: 1;
 }
 .political-holder h6 {
 	font-size: 12px;
 	line-height: 14px;
 }
-.political-holder p {
+.political-office-holder p {
 	font-size: 10px;
 	line-height: 12px;
-	color: #646464;
 }
 #detailsModal .modal-dialog {
 	max-width: 850px;
