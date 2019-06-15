@@ -264,7 +264,8 @@ a.shortcuts-sample:hover {
 #editprofileModal .form-control,
 #upgradeModal p,
 #upgradeModal .form-control,
-#upgradeModal #checkbox {
+#upgradeModal #checkbox,
+.political-position {
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
@@ -419,7 +420,8 @@ a.viewmore,
 	border-radius: 4px;
 	margin-bottom: 5px;
 }
-a.removepoll {
+a.removepoll, 
+.politicalholder {
 	font-size: 14px;
 	color: #27A9F8;
 }
@@ -462,7 +464,8 @@ a.removepoll.addachoice {
 }
 #post-div form label,
 .contact-info p,
-#upgradeModal label {
+#upgradeModal label,
+.political-position {
     font-weight: 500;
 }
 #post-div form input,
@@ -729,7 +732,9 @@ section {
 .political-dropdown {
 	display: initial;
 	padding: 8px;
-    margin-right: 5px;
+	margin-right: 5px;
+	position: relative;
+    top: 3px;
 }
 .btn.btn-info.btn-upgrade {
 	background: #27A9F8;
@@ -740,12 +745,21 @@ section {
 .mt-40 {
 	margin-top: 40px;
 }
-.contact-info h5 {
+.contact-info,
+.contact-dotted {
+	padding-bottom: 10px;
+} 
+.contact-info h5,
+.politicalholder {
 	font-weight: 500;
 	color: #034D79;
 }
 .contact-info p {
 	margin-bottom: 0;
+}
+.contact-dotted {
+	border-left: 1px dotted #C4C4C4;
+    padding-left: 35px;
 } 
 .politicaloffice-holder {
 	background: #F2F2F2;
@@ -784,6 +798,31 @@ section {
 #detailsModal h5 {
 	margin-bottom: 30px;
 }
+#editprofileModal .modal-header {
+    display: block;
+    border-bottom: none;
+	padding: 0;
+}
+#editprofileModal #profile-background {
+    text-align: left;
+    padding-left: 50px;
+}
+#editprofileModal .profilename-div {
+	border: 0;
+    margin-bottom: 40px;
+    position: relative;
+    top: 50px;
+}
+#editprofileModal .profile-edit {
+	position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#editprofileModal .edit-picture {
+	position: relative;
+    top: 25px;
+    left: -35px;
+}
 #editprofileModal .modal-body {
 	padding: 20px 60px;
 } 
@@ -810,4 +849,42 @@ section {
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+#upgradeModal #checkbox {
+	margin-bottom: 10px;
+}
+#upgradeModal #checkbox input[type=checkbox] {
+	display: block;
+	margin-top: 3px;
+}
+#successfulModal .modal-body {
+	padding: 70px;
+}
+#successfulModal p {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.pdtop-15 {
+	padding-top: 15px;
+}
+.political-position {
+	color: #646464;
+	margin-top: -15px;
+}
+
+/* aide post */
+#aide-check {
+	padding-left: 4.5rem;
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+#aide-check label {
+    border: none;
+    padding: 0;
+}
+#aide-check input[type=checkbox] {
+    display: block;
 }
