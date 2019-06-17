@@ -144,7 +144,8 @@ a.shortcuts-sample:hover {
 .shortcuts-sample span {
 	display: inline-flex;
 	position: relative;
-	top: -6px;
+	/* top: -6px; */
+	top: -22px;
 	color: #333333;
 	font-weight: normal;
 }
@@ -265,7 +266,8 @@ a.shortcuts-sample:hover {
 #upgradeModal p,
 #upgradeModal .form-control,
 #upgradeModal #checkbox,
-.political-position {
+.political-position,
+.search .results a {
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.03em;
@@ -886,4 +888,45 @@ section {
 }
 #aide-check input[type=checkbox] {
     display: block;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.search .results {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+}
+.search .results li:first-child:before {
+    border-bottom: 5px solid #c4c7d7;
+    top: -11px;
+}
+
+.search .results li:first-child:after {
+    border-bottom: 5px solid #fdfdfd;
+    top: -10px;
+}
+.search .results a {
+    display: block;
+    padding: 6px 40px 6px 10px;
+    border: 1px solid transparent;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #333333;
+}
+.search .results a.search-item:hover {
+	background: #00B0F0;
+	color: #fff;
+}
+.search .results a.viewmore {
+	top: 6px;
+	font-weight: 500;
 }
