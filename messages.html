@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Government Clout</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/loading-btn.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/activity.css" rel="stylesheet"/>
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+    <!-- <style>
+        .containe {
+            max-width:1170px; 
+            margin:auto;
+        }
+        img { 
+            max-width:100%;
+        }
+        .inbox_people {
+          background: #fff;
+          float: left;
+          overflow: hidden;
+          width: 40%; 
+          border-right:1px solid #f0f0f0;
+        }
+        .inbox_msg {        
+            border: 1px solid #F0F0F0;
+            clear: both;
+            overflow: hidden;
+        }
+        .top_spac{ margin: 20px 0 0;}
+        
+        
+        .recent_heading {
+
+        }
+        .srch_bar {
+          
+        }
+        .headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+        
+        .recent_heading h4 {
+          color: #05728f;
+          font-size: 21px;
+          margin: auto;
+        }
+        .srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:80%; padding:2px 0 4px 6px; background:none;}
+        .srch_bar .input-group-addon button {
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+          border: medium none;
+          padding: 0;
+          color: #707070;
+          font-size: 18px;
+        }
+        .srch_bar .input-group-addon { margin: 0 0 0 -27px;}
+        
+        .chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+        .chat_ib h5 span{ font-size:13px; float:right;}
+        .chat_ib p{ font-size:14px; color:#989898; margin:auto}
+        .chat_img {
+          float: left;
+          width: 11%;
+        }
+        .chat_ib {
+          float: left;
+          padding: 0 0 0 15px;
+          width: 88%;
+        }
+        
+        .chat_people{ overflow:hidden; clear:both;}
+        .chat_list {
+          border-bottom: 1px solid #c4c4c4;
+          margin: 0;
+          padding: 18px 16px 10px;
+        }
+        .inbox_chat { height: 550px; overflow-y: scroll;}
+        
+        .active_chat{ background:#ebebeb;}
+        
+        .incoming_msg_img {
+          display: inline-block;
+          width: 6%;
+        }
+        .received_msg {
+          display: inline-block;
+          padding: 0 0 0 10px;
+          vertical-align: top;
+          width: 92%;
+         }
+         .received_withd_msg p {
+          background: #ebebeb none repeat scroll 0 0;
+          border-radius: 3px;
+          color: #646464;
+          font-size: 14px;
+          margin: 0;
+          padding: 5px 10px 5px 12px;
+          width: 100%;
+        }
+        .time_date {
+          color: #747474;
+          display: block;
+          font-size: 12px;
+          margin: 8px 0 0;
+        }
+        .received_withd_msg { width: 57%;}
+        .mesgs {
+          float: left;
+          padding: 30px 15px 0 25px;
+          width: 60%;
+        }
+        
+         .sent_msg p {
+          background: #05728f none repeat scroll 0 0;
+          border-radius: 3px;
+          font-size: 14px;
+          margin: 0; color:#fff;
+          padding: 5px 10px 5px 12px;
+          width:100%;
+        }
+        .outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+        .sent_msg {
+          float: right;
+          width: 46%;
+        }
+        .input_msg_write input {
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+          border: medium none;
+          color: #4c4c4c;
+          font-size: 15px;
+          min-height: 48px;
+          width: 100%;
+        }
+        
+        .type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+        .msg_send_btn {
+          background: #05728f none repeat scroll 0 0;
+          border: medium none;
+          border-radius: 50%;
+          color: #fff;
+          cursor: pointer;
+          font-size: 17px;
+          height: 33px;
+          position: absolute;
+          right: 0;
+          top: 11px;
+          width: 33px;
+        }
+        .messaging { padding: 0 0 50px 0;}
+        .msg_history {
+          height: 516px;
+          overflow-y: auto;
+        }</style> -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                        <form class="form-inline search" action="" id="navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Michelle">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                                <div class="results">
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="text-center viewmore-cover"><a href="" class="viewmore bold">See all search for Michelle</a></p>
+                                </div>
+                            </div> 
+                        </form>  
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="m-10">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <div class="dropdown">
+                                    <a class="message-div nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="message-count">0</span><img src="images/message.png" class="img-fluid" alt="message">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-left">
+                                        <h5 class="dropdown-header">Messages</h5>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <p class="text-center viewmore-cover"><a href="" class="viewmore bold">View more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <div class="dropdown">
+                                    <a class="message-div nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="message-count">2</span><img src="images/notification.png" class="img-fluid" alt="notification">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-left">
+                                        <h5 class="dropdown-header">Notifications</h5>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <p class="text-center viewmore-cover"><a href="notifications.html" class="viewmore bold">View more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="pull-right">
+                                    <div class="dropdown" id="profile-dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Link 1</a>
+                                          <a class="dropdown-item" href="#">Link 2</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="activity-div">
+        <div class="container-fluid pt-20">
+            <div class="row">
+                
+                    <!-- <div class="container">
+                        <div class="messaging">
+                            <div class="inbox_msg">
+                                <div class="inbox_people">
+                                    <div class="headind_srch">
+                                        <div class="recent_heading">
+                                            <h4>Recent</h4>
+                                        </div>
+                                        <div class="srch_bar">
+                                                <div class="stylish-input-group">
+                                                    <input type="text" class="search-bar"  placeholder="Search" >
+                                                    <span class="input-group-addon">
+                                                    <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                                                    </span> </div>
+                                                </div>
+                                            </div>
+                                        <div class="inbox_chat">
+                                            <div class="chat_list active_chat">
+                                                <div class="chat_people">
+                                                    <div class="chat_img"> 
+                                                        <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> 
+                                                    </div>
+                                                    <div class="chat_ib">
+                                                        <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                        <p>Lorem ipsum dolor sit amet,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat_list">
+                                                <div class="chat_people">
+                                                    <div class="chat_img"> 
+                                                        <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> 
+                                                    </div>
+                                                    <div class="chat_ib">
+                                                        <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                        <p>Test, which is a new approach to have all solutions 
+                                                            astrology under one roof.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                <p>Test, which is a new approach to have all solutions 
+                                                    astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                <p>Test, which is a new approach to have all solutions 
+                                                    astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="mesgs">
+                                        <div class="msg_history">
+                                            <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                <p>Test which is a new approach to have all
+                                                    solutions</p>
+                                                <span class="time_date"> 11:01 AM    |    June 9</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="outgoing_msg">
+                                            <div class="sent_msg">
+                                                <p>Test which is a new approach to have all
+                                                solutions</p>
+                                                <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+                                            </div>
+                                            <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                <p>Test, which is a new approach to have</p>
+                                                <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+                                            </div>
+                                            </div>
+                                            <div class="outgoing_msg">
+                                            <div class="sent_msg">
+                                                <p>Apollo University, Delhi, India Test</p>
+                                                <span class="time_date"> 11:01 AM    |    Today</span> </div>
+                                            </div>
+                                            <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                <p>We work directly with our designers and suppliers,
+                                                    and sell direct to you, which means quality, exclusive
+                                                    products, at a price anyone can afford.</p>
+                                                <span class="time_date"> 11:01 AM    |    Today</span></div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="type_msg">
+                                            <div class="input_msg_write">
+                                            <input type="text" class="write_msg" placeholder="Type a message" />
+                                            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="col-lg-3">
+                    <div class="postdiv">
+                        <h5>Messages</h5>
+                        <form class="form-inline search" action="" id="navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="messages-list">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                            <p class="message-timing">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="margin-left: -25px;">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                            <p class="message-timing">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="margin-left: -25px;">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                            <p class="message-timing">2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                                <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                        </div>
+                                        <div class="p-2 flex-fill mt-8">
+                                            <div>
+                                                <p><b>Michelle Heston</b> </p>
+                                                <p class="message-content">Lorem ipsum dolor...</p>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 flex mt-8">
+                                            <div>
+                                                <p>11:23Pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="white-messages-list">
+                            <a class="dropdown-item" href="#" style="padding: 10px 0;">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <img src="images/commenter-three.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 flex-fill mt-8">
+                                        <div>
+                                            <p><b>Michelle Heston</b> </p>
+                                            <p class="message-content">Lorem ipsum dolor...</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex mt-8">
+                                        <div>
+                                            <p>11:23Pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="postdiv">
+                        <div class="messenger-details">
+                            <div class="d-flex">
+                                <div class="p-2 mt-10">
+                                    <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                </div>
+                                <div class="p-2 flex-fill mt-8">
+                                    <div>
+                                        <p class="mb-6"><b>Michelle Heston</b> </p>
+                                        <p class="message-content">Lorem ipsum dolor...</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 flex mt-12">
+                                    <div>
+                                        <a href=""><img src="images/close.svg" class="img-fluid" alt="close icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messagecontent">
+                            <div class="sender">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 mt-8">
+                                        <div>
+                                            <p class="content">Lorem ipsum dolor...</p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receiver pull-right">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <div class="content-wrapper">
+                                            <p class="mb-6 content">Lorem ipsum dolor sit amet, consectetuer fid adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet do</p>
+                                            <p class="time text-right">1 day ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>            
+                                </div>
+                            </div>
+                            <div class="sender">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 mt-8">
+                                        <div>
+                                            <p class="content">Lorem ipsum dolor...</p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receiver pull-right">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <div class="content-wrapper">
+                                            <p class="mb-6 content">Lorem ipsum dolor sit amet, consectetuer fid adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet do</p>
+                                            <p class="time text-right">1 day ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>            
+                                </div>
+                            </div>
+                            <div class="sender">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 mt-8">
+                                        <div>
+                                            <p class="content">Lorem ipsum dolor...</p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receiver pull-right">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <div class="content-wrapper">
+                                            <p class="mb-6 content">Lorem ipsum dolor sit amet, consectetuer fid adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet do</p>
+                                            <p class="time text-right">1 day ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>            
+                                </div>
+                            </div>
+                            <div class="sender">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>
+                                    <div class="p-2 mt-8">
+                                        <div>
+                                            <p class="content">Lorem ipsum dolor...</p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receiver pull-right">
+                                <div class="d-flex">
+                                    <div class="p-2 mt-8">
+                                        <div class="content-wrapper">
+                                            <p class="mb-6 content">Lorem ipsum dolor sit amet, consectetuer fid adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet do</p>
+                                            <p class="time text-right">1 day ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 mt-10">
+                                        <img src="images/message-sender.png" class="img-circle" alt="Friend's profile picture">
+                                    </div>            
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <form class="d-flex mt-15">
+                        <input class="flex-fill form-control mr-sm-2" type="text" placeholder="Type article here ...">
+                        <button class="flex btn btn-info btn-sign my-2 my-sm-0" type="button">SEND</button>
+                    </form> 
+                </div>
+                <div class="col-lg-3">
+                    <div class="peoplediv">
+                        <h6 class="bold">People you may know</h6>
+                        <div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div><div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div><div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="more">More</a>
+                        </div>
+                    </div>
+                    <div class="trendingdiv">
+                        <h6 class="bold">Trending for you</h6>
+                        <div>
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="more" style="position: static;">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div>
+                        <p>© 2018 GClout | All copyrights rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-right">
+                        <a href="">Help & FAQ</a>
+                        <a href="terms.html">Terms Of Use</a>
+                        <a href="privacy.html">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- create post modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Post</p>
+                    </div>
+                    <div class="dropdown pull-right">
+                        <a class="dropdown-toggle filter-dropdown" data-toggle="dropdown" href="#">
+                            <span class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</span>
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Infrastructure</a>
+                          <a class="dropdown-item" href="#">Education</a>
+                          <a class="dropdown-item" href="#">Politics</a>
+                          <a class="dropdown-item" href="#">Security</a>
+                          <a class="dropdown-item" href="#">Agriculture</a>
+                          <a class="dropdown-item" href="#">Technology</a>
+                          <a class="dropdown-item" href="#">Economy</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div id="postcontent-div">
+                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                <textarea class="form-control" placeholder="What’s on your mind"></textarea>
+                            </div>
+                            <div class="pt-20 pb-15 mb--15">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png" class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png" class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png" class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png" class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png" class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create poll modal -->
+    <div class="modal" id="pollModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Create poll</p>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Select a sector</option>
+                                <option>Economy</option>
+                                <option>Infrastructure</option>
+                                <option>Education</option>
+                                <option>Politics</option>
+                                <option>Security</option>
+                                <option>Agriculture</option>
+                                <option>Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div id="postcontent-div">
+                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                <textarea class="form-control" placeholder="What’s on your mind"></textarea>
+                            </div>
+                            <div class="ml-60">
+                                <div class="pull-right">
+                                    <p class="text-right"><a href="" class="removepoll">Remove poll</a></p>
+                                </div>
+                                <form>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Yes/Agree/True
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">No/Disagree/False
+                                        </label>
+                                    </div>
+                                    <div class="form-check disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Undecided/No idea
+                                        </label>
+                                    </div>
+                                    <p>
+                                        <a href="" class="removepoll addachoice"><i class="fa fa-plus"></i>&nbsp;Add a choice</a>
+                                    </p>
+                                    <div class="pollselect-div">
+                                            <p>
+                                                <span>Poll length: </span>
+                                                <span>&nbsp;Days</span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                                <span>Hours</span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pb-15" style="margin-top: -25px;">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png" class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png" class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png" class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png" class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png" class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                            <div>
+                                <button class="btn btn-info btn-add btn-post">Post</button>
+                                <button class="btn btn-info btn-remove btn-post">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create petition modal -->
+    <div class="modal" id="petitionModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Create petition</p>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Select a sector</option>
+                                <option>Economy</option>
+                                <option>Infrastructure</option>
+                                <option>Education</option>
+                                <option>Politics</option>
+                                <option>Security</option>
+                                <option>Agriculture</option>
+                                <option>Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div style="padding-top: 30px;">
+                                <form>
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="petiton-title">Petition title</label>
+                                            <input type="text" class="form-control" id="petition-title" placeholder="Petition title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="petiton-body">Petition body</label>
+                                            <input type="text" class="form-control" id="petition-body" placeholder="Type your petition here...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="targeted-office">Targeted office</label>
+                                            <select class="form-control" id="targeted-office">
+                                                <option>President</option>
+                                                <option>Vice President</option>
+                                                <option>Secretary General</option>
+                                                <option>Education</option>
+                                                <option>Politics</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="pollselect-div">
+                                            <p>
+                                                <span>Petition length: </span>
+                                                <span>&nbsp;Days</span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                                <span>Hours</span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pb-15" style="margin-top: -25px;">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png" class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png" class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png" class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png" class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png" class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                            <div>
+                                <button class="btn btn-info btn-add btn-post">Post</button>
+                                <button class="btn btn-info btn-remove btn-post">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
