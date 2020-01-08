@@ -23,3 +23,9 @@
 	    width: 83%;
 	}
 }
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+    .ml--20 {
+        margin-left: -60px;
+    }
+}

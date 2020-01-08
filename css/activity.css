@@ -213,6 +213,9 @@ a.shortcuts-sample:hover {
 .ml-10 {
 	margin-left: 10px;
 }
+.ml--20 {
+	margin-left: -20px;
+}
 .postdiv .sponsored {
 	font-weight: normal;
 	color: #8D8D8D;
@@ -304,9 +307,9 @@ a.shortcuts-sample:hover {
 .makecomments-div {
 	padding: 15px 0;
 }
-.makecomments-div textarea {
+/*.makecomments-div textarea {
     height: 45px;
-}
+}*/
 .commentersdiv {
     background: #F7F7F7;
     border: 1px solid #F0F0F0;
