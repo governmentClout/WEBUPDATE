@@ -214,160 +214,164 @@
 
     <div id="activity-div">
         <div class="container">
-            <div>
-                <h4>Create a page</h4>
-                <p>Connect your business, yourself or your cause to the worldwide community of people on Facebook. To get started, choose a page category</p> 
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="business-wrapper text-center" id="brand-wrapper">
-                        <img src="images/biz_illustration.png" class="img-fluid" alt="illustration">
-                        <div class="business-div">
+            <div id="createapage-container">
+                <div>
+                    <h4>Create a page</h4>
+                    <p>Connect your business, yourself or your cause to the worldwide community of people on Facebook. To get started, choose a page category</p> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="business-wrapper text-center" id="brand-wrapper">
+                            <img src="images/biz_illustration.png" class="img-fluid" alt="illustration">
+                            <div class="business-div">
+                                <h6>Business or Brand</h6>
+                                <p>Showcase your products and services, spotlight your brandand reach more customers on Facebook</p>
+                            </div>
+                            <button class="btn btn-info btn-add" id="getstarted">Get Started</button>
+                        </div>
+                        <div class="business-wrapper" id="business-form">
                             <h6>Business or Brand</h6>
                             <p>Showcase your products and services, spotlight your brandand reach more customers on Facebook</p>
-                        </div>
-                        <button class="btn btn-info btn-add" id="getstarted">Get Started</button>
-                    </div>
-                    <div class="business-wrapper" id="business-form">
-                        <h6>Business or Brand</h6>
-                        <p>Showcase your products and services, spotlight your brandand reach more customers on Facebook</p>
 
-                        <form>
-                            <div class="form-group">
-                                <label for="pagename">Page Name</label>
-                                <input type="text" name="" class="form-control" placeholder="Name your Page" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="pagename">Category</label>
-                                <select class="form-control" placeholder="" id="category" required onchange='checkvalue(this.value)'>
-                                    <option>Add a Category to describe your Page</option>
-                                    <option value="information_technology">Information Technology</option>
-                                    <option value="accounting">Accounting</option>
-                                    <option value="tax">Tax</option>   
-                                </select>
-                            </div>
-                            <div id="address-wrapper">
+                            <form>
                                 <div class="form-group">
-                                    <label for="pagename">Address</label>
-                                    <input type="text" name="" class="form-control" placeholder="Street Address" required>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-8 col-md-7">
-                                        <div class="form-group">
-                                            <input type="text" name="" class="form-control" placeholder="Street Address" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-5">
-                                        <div class="form-group">
-                                            <input type="text" name="" class="form-control" placeholder="ZIP Code">
-                                        </div>
-                                    </div>
+                                    <label for="pagename">Page Name</label>
+                                    <input type="text" name="" class="form-control" placeholder="Name your Page" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="pagename">Phone Number (optional)</label>
-                                    <input type="text" name="" class="form-control" placeholder="Phone Number (optional)">
+                                    <label for="pagename">Category</label>
+                                    <select class="form-control" placeholder="" id="category" required onchange='checkvalue(this.value)'>
+                                        <option>Add a Category to describe your Page</option>
+                                        <option value="information_technology">Information Technology</option>
+                                        <option value="accounting">Accounting</option>
+                                        <option value="tax">Tax</option>   
+                                    </select>
                                 </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" id="showaddress" value="" style="display: block;">Don't show my address. Only show that this business is in the City, State, Region
-                                    </label>
+                                <div id="address-wrapper">
+                                    <div class="form-group">
+                                        <label for="pagename">Address</label>
+                                        <input type="text" name="" class="form-control" placeholder="Street Address" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="" class="form-control" placeholder="Street Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-5">
+                                            <div class="form-group">
+                                                <input type="text" name="" class="form-control" placeholder="ZIP Code">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pagename">Phone Number (optional)</label>
+                                        <input type="text" name="" class="form-control" placeholder="Phone Number (optional)">
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="showaddress" value="" style="display: block;"><p>Don't show my address. Only show that this business is in the City, State, Region</p>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                        <p>When you create a Page on Facebook the <a href="">Pages, Groups and Events Policies</a> apply</p>
-                        <button class="btn btn-info btn-add">Continue</button>
+                            </form>
+                            <p style="margin-top: 15px;">When you create a Page on Facebook the <a href="">Pages, Groups and Events Policies</a> apply</p>
+                            <button class="btn btn-info btn-add" id="continue">Continue</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="business-wrapper text-center" id="community-wrapper">
-                        <img src="images/community_illustration.png" class="img-fluid" alt="illustration">
-                        <div class="business-div">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="business-wrapper text-center" id="community-wrapper">
+                            <img src="images/community_illustration.png" class="img-fluid" alt="illustration">
+                            <div class="business-div">
+                                <h6>Community or Public Figure</h6>
+                                <p>Connect and share with people in your community, organization, team, group or club</p>
+                            </div>
+                            <button class="btn btn-info btn-add" id="cgetstarted">Get Started</button>
+                        </div>
+
+                        <div class="business-wrapper" id="community-form">
                             <h6>Community or Public Figure</h6>
-                            <p>Connect and share with people in your community, organization, team, group or club</p>
+                            <p>Connect and share with people in your community, organization, team, group or club.</p>
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="pagename">Page Name</label>
+                                    <input type="text" name="" class="form-control" placeholder="Name your Page" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pagename">Category</label>
+                                    <select class="form-control" placeholder="" id="ccategory" required>
+                                        <option>Add a Category to describe your Page</option>
+                                        <option value="information_technology">Information Technology</option>
+                                        <option value="accounting">Accounting</option>
+                                        <option value="tax">Tax</option>   
+                                    </select>
+                                </div>
+                            </form>
+                            <p style="margin-top: 15px;">When you create a Page on Facebook the <a href="">Pages, Groups and Events Policies</a> apply</p>
+                            <button class="btn btn-info btn-add" id="continue">Continue</button>
                         </div>
-                        <button class="btn btn-info btn-add" id="cgetstarted">Get Started</button>
-                    </div>
-
-                    <div class="business-wrapper" id="community-form">
-                        <h6>Community or Public Figure</h6>
-                        <p>Connect and share with people in your community, organization, team, group or club.</p>
-
-                        <form>
-                            <div class="form-group">
-                                <label for="pagename">Page Name</label>
-                                <input type="text" name="" class="form-control" placeholder="Name your Page" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="pagename">Category</label>
-                                <select class="form-control" placeholder="" id="ccategory" required>
-                                    <option>Add a Category to describe your Page</option>
-                                    <option value="information_technology">Information Technology</option>
-                                    <option value="accounting">Accounting</option>
-                                    <option value="tax">Tax</option>   
-                                </select>
-                            </div>
-                        </form>
-                        <p>When you create a Page on Facebook the <a href="">Pages, Groups and Events Policies</a> apply</p>
-                        <button class="btn btn-info btn-add">Continue</button>
-                    </div>
-                </div>     
-            </div>
-        </div>
-    </div>
-
-    <!-- uploading profile picture -->
-    <div class="picture-div" id="profile-photo">
-        <div class="picture-wrapper">
-            <p class="bold">Add a Profile Picture</p>
-            <p>Help people find your Page by adding a photo.</p>
-        </div>
-        <div class="text-center">
-            <img src="images/picture-wrapper.png" class="img-fluid" alt="illustration">
-        </div>
-        <div style="padding: 10px;">
-            <div class="text-right">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-3 col-md-3">
-                        <button class="btn btn-info btn-skip">Skip</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <input type="file" name="" placeholder="Upload a Profile Picture">
-                    </div>
+                    </div>     
                 </div>
             </div>
-            <div>
-                <p>Step 1 of 2</p>
+        </div>
+
+        <!-- uploading profile picture -->
+        <div class="picture-div" id="profile-photo">
+            <div class="picture-wrapper">
+                <p class="bold">Add a Profile Picture</p>
+                <p>Help people find your Page by adding a photo.</p>
+            </div>
+            <div class="text-center">
+                <img src="images/picture-wrapper.png" class="img-fluid" alt="illustration">
+            </div>
+            <div style="padding: 10px;">
+                <div class="text-right">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-3 col-md-3">
+                            <button class="btn btn-info btn-skip" id="skip">Skip</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input type="file" name="" placeholder="Upload a Profile Picture">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Step 1 of 2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- uploading cover photo -->
+        <div class="picture-div" id="cover-photo">
+            <div class="picture-wrapper">
+                <p class="bold">Add a Cover Photo</p>
+                <p>Pages with cover photos typically get more Page likes and visits.</p>
+            </div>
+            <div class="text-center">
+                <img src="images/picture-wrapper.png" class="img-fluid" alt="illustration">
+            </div>
+            <div style="padding: 10px;">
+                <div class="text-right">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-3 col-md-3">
+                            <button class="btn btn-info btn-skip">Skip</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <input type="file" name="" placeholder="Upload a Cover Photo">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Step 2 of 2</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- uploading cover photo -->
-    <div class="picture-div" id="cover-photo">
-        <div class="picture-wrapper">
-            <p class="bold">Add a Cover Photo</p>
-            <p>Pages with cover photos typically get more Page likes and visits.</p>
-        </div>
-        <div class="text-center">
-            <img src="images/picture-wrapper.png" class="img-fluid" alt="illustration">
-        </div>
-        <div style="padding: 10px;">
-            <div class="text-right">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-3 col-md-3">
-                        <button class="btn btn-info btn-skip">Skip</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <input type="file" name="" placeholder="Upload a Cover Photo">
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Step 2 of 2</p>
-            </div>
-        </div>
-    </div>
+    
 
     
     <footer>
@@ -409,6 +413,16 @@
                 $("#community-form").show();
             });
 
+            // for picture upload
+            $("#continue").click(function(){
+                $('#createapage-container').hide();
+                $("#profile-photo").show();
+            });
+
+            $("#skip").click(function(){
+                $('#profile-photo').hide();
+                $("#cover-photo").show();
+            });
         });
 
         function checkvalue(val) {

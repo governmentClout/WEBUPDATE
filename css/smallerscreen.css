@@ -12,6 +12,9 @@
     .signup-box .btn.btn-primary.btn-linkedin {
     	margin-bottom: 10px;
     }
+    .picture-div {
+        width: 70%;
+    }
 }
 @media screen and (max-width: 1000px) {
     .signup-box h3 {
