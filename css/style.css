@@ -425,3 +425,67 @@ input[type=checkbox]:checked:disabled + label:before {
 #community-form {
     display: none;
 }
+
+/* page */
+.page-picture {
+    position: relative;
+    margin-bottom: 20px;
+}
+.page-picture img {
+    border-radius: 50%;
+}
+.page-picture i {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 6px;
+    background-color: #27a9f8;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+}
+.page-name a {
+    color: #333;
+}
+#usernameModal .modal-header {
+    background: #f0f0f0;
+    padding-bottom: 1rem;
+}
+#usernameModal .modal-body {
+    padding: 1rem;
+}
+#usernameModal .modal-footer {
+    border-top: none;
+}
+.page-username a {
+    color: #90949c;
+    font-weight: 600;
+    line-height: 18px;
+}
+.cover-photo {
+    background-color: #8d949e;
+    background-image: url(/rsrc.php/v3/yB/r/Cr8IyQQAuOy.png);
+    background-repeat: repeat;
+    background-size: 351px 195px;
+    height: 300px;
+}
+.like-wrapper {
+    background: #fff;
+    padding: 10px;
+}
+span.create {
+    font-size: 14px; 
+    line-height: 18px; 
+    letter-spacing: normal; 
+    font-weight: bold; 
+    overflow-wrap: normal; 
+    text-align: left; 
+    color: rgb(96, 103, 112);
+}
+#events-wrapper a span img {
+    margin-top: -5px;
+}
