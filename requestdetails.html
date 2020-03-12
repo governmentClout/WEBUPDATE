@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Government Clout</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/loading-btn.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/activity.css" rel="stylesheet"/>
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+    <style>
+        .btn.btn-info.btn-add,
+        .btn.btn-info.btn-remove {
+            font-size: 16px;
+            padding: 10px 25px;
+            padding-top: 6px;
+        }
+        .request {
+            width: 70%;
+        }
+        .request-wrapper {
+            width: 88%;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body id="activity-div">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-9">
+                    <div>
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                        <form class="form-inline search" action="" id="navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Michelle">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                                <div class="results">
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>                                                
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>                                                
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="search-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                            </div>
+                                            <div class="p-2 flex-fill mt-15">
+                                                <div>
+                                                    <p><b>Michelle Heston</b> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="text-center viewmore-cover"><a href="" class="viewmore bold">See all search for Michelle</a></p>
+                                </div>
+                            </div> 
+                        </form>    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-6 col-12">
+                    <div class="m-10">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-2 col-sm-3 col-3">
+                                <div class="dropdown">
+                                    <a class="message-div nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="message-count">0</span><img src="images/message.png" class="img-fluid" alt="message">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-left">
+                                        <h5 class="dropdown-header">Messages</h5>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> </p>
+                                                        <p class="message-content"><img src="images/mess-age.png" class="img-fluid"> &nbsp;Hello</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 flex mt-8">
+                                                    <div>
+                                                        <p>11:23Pm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <p class="text-center viewmore-cover"><a href="" class="viewmore bold">View more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-3 col-3">
+                                <div class="dropdown">
+                                    <a class="message-div nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="message-count">2</span><img src="images/notification.png" class="img-fluid" alt="notification">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-left">
+                                        <h5 class="dropdown-header">Notifications</h5>
+                                        <a class="dropdown-item" href="">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/notify.png" class="img-circle" alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <p class="text-center viewmore-cover"><a href="notifications.html" class="viewmore bold">View more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-sm-3 col-3">
+                                <div class="pull-right">
+                                    <div class="dropdown" id="profile-dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Link 1</a>
+                                          <a class="dropdown-item" href="#">Link 2</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="request-wrapper">
+        <h6>David Benjamin</h6>
+        <h4 class="request">Sent in a request to be upgraded into a political office. Sent in a request to be upgraded into a political office. Sent in a request to be upgraded into a political office</h4>
+        <span>20 minutes ago</span>
+        <div class="d-flex m-4" style="margin-left: 0!important;">
+            <div>
+                <button class="btn btn-info btn-add">Accept</button>
+            </div>
+            <div>
+                <button class="btn btn-info btn-remove">Decline</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
